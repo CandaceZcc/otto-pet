@@ -22,10 +22,10 @@
       },
       {
         "file": "frames\\idle\\02.png",
-        "source": "suona",
-        "source_frame": 6,
-        "note": "visible looping suona idle performance",
-        "brightness": 74.15
+        "source": "running_lowres",
+        "source_frame": 0,
+        "note": "brief p2 wheelchair idle flash",
+        "brightness": 10.06
       },
       {
         "file": "frames\\idle\\03.png",
@@ -36,10 +36,10 @@
       },
       {
         "file": "frames\\idle\\04.png",
-        "source": "suona",
-        "source_frame": 6,
-        "note": "visible looping suona idle performance",
-        "brightness": 74.15
+        "source": "running_lowres",
+        "source_frame": 14,
+        "note": "brief p2 wheelchair idle flash",
+        "brightness": 11.47
       },
       {
         "file": "frames\\idle\\05.png",

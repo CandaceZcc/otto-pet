@@ -48,11 +48,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15980,
+          "nontransparent_pixels": 12489,
           "bbox": [
-            12,
-            47,
-            180,
+            45,
+            27,
+            146,
             198
           ],
           "edge_pixels": 0,
@@ -78,11 +78,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15980,
+          "nontransparent_pixels": 11912,
           "bbox": [
-            12,
-            47,
-            180,
+            44,
+            35,
+            147,
             198
           ],
           "edge_pixels": 0,

@@ -86,6 +86,16 @@ STATE_SOURCES = {
 }
 
 
+IDLE_SEQUENCE = [
+    ("suona", 4, 1.0, 0, 0, True, "visible looping suona idle performance"),
+    ("suona", 5, 1.0, 0, 0, True, "visible looping suona idle performance"),
+    ("running_lowres", 0, 1.08, 0, 0, False, "brief p2 wheelchair idle flash"),
+    ("suona", 7, 1.0, 0, 0, True, "visible looping suona idle performance"),
+    ("running_lowres", 14, 1.08, 0, 0, False, "brief p2 wheelchair idle flash"),
+    ("suona", 5, 1.0, 0, 0, True, "visible looping suona idle performance"),
+]
+
+
 def reset_output() -> None:
     if BUILD.exists():
         shutil.rmtree(BUILD)
@@ -278,6 +288,7 @@ def fit_to_cell(
     x_shift: int = 0,
     y_shift: int = 0,
     mirror: bool = False,
+    isolate_largest_component: bool = True,
 ) -> Image.Image:
     crop = frame.crop(viewport)
     if mirror:
@@ -295,7 +306,10 @@ def fit_to_cell(
     left = (CELL_W - crop.width) // 2 + x_shift
     top = CELL_H - crop.height - 10 + y_shift
     canvas.alpha_composite(crop, (left, top))
-    return keep_largest_alpha_component(clear_transparent_rgb(canvas), solidify=False)
+    canvas = clear_transparent_rgb(canvas)
+    if isolate_largest_component:
+        return keep_largest_alpha_component(canvas, solidify=False)
+    return canvas
 
 
 def brightness(frame: Image.Image) -> float:
@@ -313,6 +327,29 @@ def build_state_frames(
     cleaned: dict[str, list[Image.Image]],
     viewports: dict[str, tuple[int, int, int, int]],
 ) -> list[dict[str, object]]:
+    if state == "idle":
+        output = []
+        for source_key, source_index, scale, x_shift, y_shift, isolate, note in IDLE_SEQUENCE:
+            frames = cleaned[source_key]
+            source_index = min(source_index, len(frames) - 1)
+            cell = fit_to_cell(
+                frames[source_index],
+                viewports[source_key],
+                scale=scale,
+                x_shift=x_shift,
+                y_shift=y_shift,
+                isolate_largest_component=isolate,
+            )
+            output.append(
+                {
+                    "image": cell,
+                    "source": source_key,
+                    "source_frame": source_index,
+                    "note": note,
+                }
+            )
+        return output
+
     source_key, indexes, note = STATE_SOURCES[state]
     frames = cleaned[source_key]
     viewport = viewports[source_key]
@@ -422,7 +459,7 @@ def make_contact_sheet(states: dict[str, list[dict[str, object]]]) -> None:
 
 def save_previews(states: dict[str, list[dict[str, object]]]) -> None:
     durations = {
-        "idle": [120, 120, 120, 120, 120, 120],
+        "idle": [85] * 6,
         "running-right": [110] * 8,
         "running-left": [110] * 8,
         "waving": [130, 130, 130, 130],
