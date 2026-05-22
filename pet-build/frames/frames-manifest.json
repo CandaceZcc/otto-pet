@@ -1,0 +1,426 @@
+{
+  "pet": "电棍otto",
+  "cell": {
+    "width": 192,
+    "height": 208
+  },
+  "states": {
+    "idle": [
+      {
+        "file": "frames\\idle\\00.png",
+        "source": "suona",
+        "source_frame": 10,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 56.09
+      },
+      {
+        "file": "frames\\idle\\01.png",
+        "source": "suona",
+        "source_frame": 11,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 57.26
+      },
+      {
+        "file": "frames\\idle\\02.png",
+        "source": "suona",
+        "source_frame": 12,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 57.76
+      },
+      {
+        "file": "frames\\idle\\03.png",
+        "source": "suona",
+        "source_frame": 13,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 57.82
+      },
+      {
+        "file": "frames\\idle\\04.png",
+        "source": "suona",
+        "source_frame": 14,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 55.81
+      },
+      {
+        "file": "frames\\idle\\05.png",
+        "source": "suona",
+        "source_frame": 15,
+        "note": "smooth continuous suona idle loop",
+        "brightness": 57.46
+      }
+    ],
+    "running-right": [
+      {
+        "file": "frames\\running-right\\00.png",
+        "source": "jiyan_running",
+        "source_frame": 26,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 80.34
+      },
+      {
+        "file": "frames\\running-right\\01.png",
+        "source": "jiyan_running",
+        "source_frame": 27,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 80.24
+      },
+      {
+        "file": "frames\\running-right\\02.png",
+        "source": "jiyan_running",
+        "source_frame": 28,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 80.65
+      },
+      {
+        "file": "frames\\running-right\\03.png",
+        "source": "jiyan_running",
+        "source_frame": 29,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 84.14
+      },
+      {
+        "file": "frames\\running-right\\04.png",
+        "source": "jiyan_running",
+        "source_frame": 30,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 84.29
+      },
+      {
+        "file": "frames\\running-right\\05.png",
+        "source": "jiyan_running",
+        "source_frame": 31,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 83.93
+      },
+      {
+        "file": "frames\\running-right\\06.png",
+        "source": "jiyan_running",
+        "source_frame": 32,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 83.28
+      },
+      {
+        "file": "frames\\running-right\\07.png",
+        "source": "jiyan_running",
+        "source_frame": 33,
+        "note": "continuous urgent work loop with slight right drift",
+        "brightness": 80.39
+      }
+    ],
+    "running-left": [
+      {
+        "file": "frames\\running-left\\00.png",
+        "source": "jiyan_running",
+        "source_frame": 26,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 80.34
+      },
+      {
+        "file": "frames\\running-left\\01.png",
+        "source": "jiyan_running",
+        "source_frame": 27,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 80.24
+      },
+      {
+        "file": "frames\\running-left\\02.png",
+        "source": "jiyan_running",
+        "source_frame": 28,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 80.65
+      },
+      {
+        "file": "frames\\running-left\\03.png",
+        "source": "jiyan_running",
+        "source_frame": 29,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 84.14
+      },
+      {
+        "file": "frames\\running-left\\04.png",
+        "source": "jiyan_running",
+        "source_frame": 30,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 84.29
+      },
+      {
+        "file": "frames\\running-left\\05.png",
+        "source": "jiyan_running",
+        "source_frame": 31,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 83.93
+      },
+      {
+        "file": "frames\\running-left\\06.png",
+        "source": "jiyan_running",
+        "source_frame": 32,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 83.28
+      },
+      {
+        "file": "frames\\running-left\\07.png",
+        "source": "jiyan_running",
+        "source_frame": 33,
+        "note": "mirrored continuous urgent work loop with slight left drift",
+        "brightness": 80.39
+      }
+    ],
+    "waving": [
+      {
+        "file": "frames\\waving\\00.png",
+        "source": "waiting",
+        "source_frame": 0,
+        "note": "previous idle baseline moved into waving row as a smooth micro-loop",
+        "brightness": 136.86
+      },
+      {
+        "file": "frames\\waving\\01.png",
+        "source": "waiting",
+        "source_frame": 1,
+        "note": "previous idle baseline moved into waving row as a smooth micro-loop",
+        "brightness": 138.89
+      },
+      {
+        "file": "frames\\waving\\02.png",
+        "source": "waiting",
+        "source_frame": 2,
+        "note": "previous idle baseline moved into waving row as a smooth micro-loop",
+        "brightness": 139.81
+      },
+      {
+        "file": "frames\\waving\\03.png",
+        "source": "waiting",
+        "source_frame": 3,
+        "note": "previous idle baseline moved into waving row as a smooth micro-loop",
+        "brightness": 139.1
+      }
+    ],
+    "jumping": [
+      {
+        "file": "frames\\jumping\\00.png",
+        "source": "waiting",
+        "source_frame": 19,
+        "note": "smooth vertical bob rebuilt from nearby waiting frames",
+        "brightness": 131.93
+      },
+      {
+        "file": "frames\\jumping\\01.png",
+        "source": "waiting",
+        "source_frame": 20,
+        "note": "smooth vertical bob rebuilt from nearby waiting frames",
+        "brightness": 131.94
+      },
+      {
+        "file": "frames\\jumping\\02.png",
+        "source": "waiting",
+        "source_frame": 21,
+        "note": "smooth vertical bob rebuilt from nearby waiting frames",
+        "brightness": 133.07
+      },
+      {
+        "file": "frames\\jumping\\03.png",
+        "source": "waiting",
+        "source_frame": 22,
+        "note": "smooth vertical bob rebuilt from nearby waiting frames",
+        "brightness": 133.77
+      },
+      {
+        "file": "frames\\jumping\\04.png",
+        "source": "waiting",
+        "source_frame": 23,
+        "note": "smooth vertical bob rebuilt from nearby waiting frames",
+        "brightness": 134.57
+      }
+    ],
+    "failed": [
+      {
+        "file": "frames\\failed\\00.png",
+        "source": "failed",
+        "source_frame": 10,
+        "note": "smooth failed reaction",
+        "brightness": 80.82
+      },
+      {
+        "file": "frames\\failed\\01.png",
+        "source": "failed",
+        "source_frame": 11,
+        "note": "smooth failed reaction",
+        "brightness": 81.16
+      },
+      {
+        "file": "frames\\failed\\02.png",
+        "source": "failed",
+        "source_frame": 12,
+        "note": "smooth failed reaction",
+        "brightness": 81.33
+      },
+      {
+        "file": "frames\\failed\\03.png",
+        "source": "failed",
+        "source_frame": 13,
+        "note": "smooth failed reaction",
+        "brightness": 79.56
+      },
+      {
+        "file": "frames\\failed\\04.png",
+        "source": "failed",
+        "source_frame": 14,
+        "note": "smooth failed reaction",
+        "brightness": 78.03
+      },
+      {
+        "file": "frames\\failed\\05.png",
+        "source": "failed",
+        "source_frame": 15,
+        "note": "smooth failed reaction",
+        "brightness": 76.27
+      },
+      {
+        "file": "frames\\failed\\06.png",
+        "source": "failed",
+        "source_frame": 16,
+        "note": "smooth failed reaction",
+        "brightness": 75.67
+      },
+      {
+        "file": "frames\\failed\\07.png",
+        "source": "failed",
+        "source_frame": 17,
+        "note": "smooth failed reaction",
+        "brightness": 75.49
+      }
+    ],
+    "waiting": [
+      {
+        "file": "frames\\waiting\\00.png",
+        "source": "waiting",
+        "source_frame": 19,
+        "note": "smooth waiting for input loop",
+        "brightness": 133.15
+      },
+      {
+        "file": "frames\\waiting\\01.png",
+        "source": "waiting",
+        "source_frame": 20,
+        "note": "smooth waiting for input loop",
+        "brightness": 132.97
+      },
+      {
+        "file": "frames\\waiting\\02.png",
+        "source": "waiting",
+        "source_frame": 21,
+        "note": "smooth waiting for input loop",
+        "brightness": 134.3
+      },
+      {
+        "file": "frames\\waiting\\03.png",
+        "source": "waiting",
+        "source_frame": 22,
+        "note": "smooth waiting for input loop",
+        "brightness": 134.93
+      },
+      {
+        "file": "frames\\waiting\\04.png",
+        "source": "waiting",
+        "source_frame": 23,
+        "note": "smooth waiting for input loop",
+        "brightness": 135.9
+      },
+      {
+        "file": "frames\\waiting\\05.png",
+        "source": "waiting",
+        "source_frame": 24,
+        "note": "smooth waiting for input loop",
+        "brightness": 136.15
+      }
+    ],
+    "running": [
+      {
+        "file": "frames\\running\\00.png",
+        "source": "jiyan_running",
+        "source_frame": 29,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 84.14
+      },
+      {
+        "file": "frames\\running\\01.png",
+        "source": "jiyan_running",
+        "source_frame": 30,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 84.29
+      },
+      {
+        "file": "frames\\running\\02.png",
+        "source": "jiyan_running",
+        "source_frame": 31,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 83.93
+      },
+      {
+        "file": "frames\\running\\03.png",
+        "source": "jiyan_running",
+        "source_frame": 32,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 83.28
+      },
+      {
+        "file": "frames\\running\\04.png",
+        "source": "jiyan_running",
+        "source_frame": 33,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 80.39
+      },
+      {
+        "file": "frames\\running\\05.png",
+        "source": "jiyan_running",
+        "source_frame": 34,
+        "note": "smooth high-intensity processing loop from 急眼2",
+        "brightness": 80.76
+      }
+    ],
+    "review": [
+      {
+        "file": "frames\\review\\00.png",
+        "source": "jiyan_review",
+        "source_frame": 18,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 81.4
+      },
+      {
+        "file": "frames\\review\\01.png",
+        "source": "jiyan_review",
+        "source_frame": 19,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 80.35
+      },
+      {
+        "file": "frames\\review\\02.png",
+        "source": "jiyan_review",
+        "source_frame": 20,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 76.67
+      },
+      {
+        "file": "frames\\review\\03.png",
+        "source": "jiyan_review",
+        "source_frame": 21,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 73.25
+      },
+      {
+        "file": "frames\\review\\04.png",
+        "source": "jiyan_review",
+        "source_frame": 22,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 74.3
+      },
+      {
+        "file": "frames\\review\\05.png",
+        "source": "jiyan_review",
+        "source_frame": 23,
+        "note": "smooth focused review loop from 急眼",
+        "brightness": 73.49
+      }
+    ]
+  }
+}

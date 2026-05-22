@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "package": "D:\\桌面\\otto-pet\\pet-build\\package\\diangun-otto",
+  "dist": "D:\\桌面\\otto-pet\\pet\\diangun-otto",
+  "spritesheet": "D:\\桌面\\otto-pet\\pet-build\\package\\diangun-otto\\spritesheet.webp",
+  "contact_sheet": "D:\\桌面\\otto-pet\\pet-build\\qa\\contact-sheet.png",
+  "manifest": "D:\\桌面\\otto-pet\\pet-build\\frames\\frames-manifest.json",
+  "states": {
+    "idle": 6,
+    "running-right": 8,
+    "running-left": 8,
+    "waving": 4,
+    "jumping": 5,
+    "failed": 8,
+    "waiting": 6,
+    "running": 6,
+    "review": 6
+  }
+}
