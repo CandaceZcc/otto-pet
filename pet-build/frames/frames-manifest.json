@@ -8,45 +8,45 @@
     "idle": [
       {
         "file": "frames\\idle\\00.png",
-        "source": "suona",
-        "source_frame": 4,
-        "note": "visible looping suona idle performance",
-        "brightness": 73.87
+        "source": "suona_smooth",
+        "source_frame": 0,
+        "note": "interpolated suona idle performance",
+        "brightness": 73.77
       },
       {
         "file": "frames\\idle\\01.png",
-        "source": "suona",
-        "source_frame": 5,
-        "note": "visible looping suona idle performance",
-        "brightness": 71.45
+        "source": "suona_smooth",
+        "source_frame": 2,
+        "note": "interpolated suona idle performance",
+        "brightness": 70.64
       },
       {
         "file": "frames\\idle\\02.png",
-        "source": "running_lowres",
-        "source_frame": 0,
-        "note": "brief p2 wheelchair idle flash",
-        "brightness": 10.06
+        "source": "suona_smooth",
+        "source_frame": 4,
+        "note": "interpolated suona idle performance",
+        "brightness": 70.93
       },
       {
         "file": "frames\\idle\\03.png",
-        "source": "suona",
-        "source_frame": 7,
-        "note": "visible looping suona idle performance",
-        "brightness": 74.62
+        "source": "suona_smooth",
+        "source_frame": 6,
+        "note": "interpolated suona idle performance",
+        "brightness": 74.1
       },
       {
         "file": "frames\\idle\\04.png",
-        "source": "running_lowres",
-        "source_frame": 14,
-        "note": "brief p2 wheelchair idle flash",
-        "brightness": 11.47
+        "source": "suona_smooth",
+        "source_frame": 4,
+        "note": "interpolated suona idle performance",
+        "brightness": 70.93
       },
       {
         "file": "frames\\idle\\05.png",
-        "source": "suona",
-        "source_frame": 5,
-        "note": "visible looping suona idle performance",
-        "brightness": 71.45
+        "source": "suona_smooth",
+        "source_frame": 2,
+        "note": "interpolated suona idle performance",
+        "brightness": 70.64
       }
     ],
     "running-right": [
@@ -73,10 +73,10 @@
       },
       {
         "file": "frames\\running-right\\03.png",
-        "source": "jiyan_running",
-        "source_frame": 29,
-        "note": "continuous urgent work loop with slight right drift",
-        "brightness": 86.63
+        "source": "running_lowres",
+        "source_frame": 0,
+        "note": "brief p2 wheelchair running-right flash",
+        "brightness": 10.06
       },
       {
         "file": "frames\\running-right\\04.png",
@@ -131,10 +131,10 @@
       },
       {
         "file": "frames\\running-left\\03.png",
-        "source": "jiyan_running",
-        "source_frame": 29,
-        "note": "mirrored continuous urgent work loop with slight left drift",
-        "brightness": 86.63
+        "source": "running_lowres",
+        "source_frame": 0,
+        "note": "brief p2 wheelchair running-left flash",
+        "brightness": 10.06
       },
       {
         "file": "frames\\running-left\\04.png",

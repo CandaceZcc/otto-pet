@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import math
 import shutil
+import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -25,6 +26,7 @@ FINAL = BUILD / "final"
 QA = BUILD / "qa"
 PACKAGE = BUILD / "package" / "diangun-otto"
 DIST = ROOT / "pet" / "diangun-otto"
+INTERPOLATED = BUILD / "interpolated"
 
 CELL_W = 192
 CELL_H = 208
@@ -62,7 +64,7 @@ SOURCES = {
 
 
 STATE_SOURCES = {
-    "idle": ("suona", [4, 5, 6, 7, 6, 5], "visible looping suona idle performance"),
+    "idle": ("suona_smooth", [0, 2, 4, 6, 4, 2], "interpolated suona idle performance"),
     "running-right": (
         "jiyan_running",
         [26, 27, 28, 29, 30, 31, 32, 33],
@@ -86,13 +88,26 @@ STATE_SOURCES = {
 }
 
 
-IDLE_SEQUENCE = [
-    ("suona", 4, 1.0, 0, 0, True, "visible looping suona idle performance"),
-    ("suona", 5, 1.0, 0, 0, True, "visible looping suona idle performance"),
-    ("running_lowres", 0, 1.08, 0, 0, False, "brief p2 wheelchair idle flash"),
-    ("suona", 7, 1.0, 0, 0, True, "visible looping suona idle performance"),
-    ("running_lowres", 14, 1.08, 0, 0, False, "brief p2 wheelchair idle flash"),
-    ("suona", 5, 1.0, 0, 0, True, "visible looping suona idle performance"),
+RUNNING_RIGHT_SEQUENCE = [
+    ("jiyan_running", 26, 1.0, 5, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("jiyan_running", 27, 1.0, 9, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("jiyan_running", 28, 1.0, 9, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("running_lowres", 0, 1.08, 5, 0, False, False, "brief p2 wheelchair running-right flash"),
+    ("jiyan_running", 30, 1.0, 3, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("jiyan_running", 31, 1.0, 0, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("jiyan_running", 32, 1.0, 0, 0, False, True, "continuous urgent work loop with slight right drift"),
+    ("jiyan_running", 33, 1.0, 5, 0, False, True, "continuous urgent work loop with slight right drift"),
+]
+
+RUNNING_LEFT_SEQUENCE = [
+    ("jiyan_running", 26, 1.0, -5, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("jiyan_running", 27, 1.0, -9, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("jiyan_running", 28, 1.0, -9, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("running_lowres", 0, 1.08, -5, 0, True, False, "brief p2 wheelchair running-left flash"),
+    ("jiyan_running", 30, 1.0, -3, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("jiyan_running", 31, 1.0, 0, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("jiyan_running", 32, 1.0, 0, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
+    ("jiyan_running", 33, 1.0, -5, 0, True, True, "mirrored continuous urgent work loop with slight left drift"),
 ]
 
 
@@ -101,6 +116,34 @@ def reset_output() -> None:
         shutil.rmtree(BUILD)
     for directory in [FRAMES, FINAL, QA / "previews", PACKAGE]:
         directory.mkdir(parents=True, exist_ok=True)
+
+
+def interpolate_suona_frames() -> list[Image.Image]:
+    output_dir = INTERPOLATED / "suona"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    source = ROOT / SOURCES["suona"].filename
+    pattern = output_dir / "%03d.png"
+    command = [
+        "ffmpeg",
+        "-y",
+        "-v",
+        "error",
+        "-i",
+        str(source),
+        "-vf",
+        "trim=start_frame=4:end_frame=8,setpts=PTS-STARTPTS,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir",
+        str(pattern),
+    ]
+    try:
+        subprocess.run(command, check=True)
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        return load_gif_frames(source)[4:8]
+
+    frames = [
+        Image.open(path).convert("RGBA")
+        for path in sorted(output_dir.glob("*.png"))
+    ]
+    return frames or load_gif_frames(source)[4:8]
 
 
 def load_gif_frames(path: Path) -> list[Image.Image]:
@@ -327,9 +370,10 @@ def build_state_frames(
     cleaned: dict[str, list[Image.Image]],
     viewports: dict[str, tuple[int, int, int, int]],
 ) -> list[dict[str, object]]:
-    if state == "idle":
+    if state in {"running-right", "running-left"}:
+        sequence = RUNNING_RIGHT_SEQUENCE if state == "running-right" else RUNNING_LEFT_SEQUENCE
         output = []
-        for source_key, source_index, scale, x_shift, y_shift, isolate, note in IDLE_SEQUENCE:
+        for source_key, source_index, scale, x_shift, y_shift, mirror, isolate, note in sequence:
             frames = cleaned[source_key]
             source_index = min(source_index, len(frames) - 1)
             cell = fit_to_cell(
@@ -338,6 +382,7 @@ def build_state_frames(
                 scale=scale,
                 x_shift=x_shift,
                 y_shift=y_shift,
+                mirror=mirror,
                 isolate_largest_component=isolate,
             )
             output.append(
@@ -504,6 +549,7 @@ def main() -> None:
     reset_output()
 
     raw = {key: load_gif_frames(ROOT / clip.filename) for key, clip in SOURCES.items()}
+    raw["suona_smooth"] = interpolate_suona_frames()
     segmentation_session = new_session("u2net_human_seg") if new_session is not None else None
     cleaned: dict[str, list[Image.Image]] = {}
     for key, clip in SOURCES.items():
@@ -511,6 +557,10 @@ def main() -> None:
             ai_segment_frame(frame, segmentation_session) or matte_from_background(frame, clip.background)
             for frame in raw[key]
         ]
+    cleaned["suona_smooth"] = [
+        ai_segment_frame(frame, segmentation_session) or matte_from_background(frame, "black")
+        for frame in raw["suona_smooth"]
+    ]
 
     viewports = {
         key: subject_bbox(frames)

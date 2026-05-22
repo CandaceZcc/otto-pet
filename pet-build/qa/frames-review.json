@@ -18,7 +18,7 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17553,
+          "nontransparent_pixels": 17571,
           "bbox": [
             12,
             33,
@@ -33,10 +33,10 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18963,
+          "nontransparent_pixels": 18598,
           "bbox": [
             12,
-            34,
+            35,
             180,
             198
           ],
@@ -48,11 +48,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 12489,
+          "nontransparent_pixels": 16889,
           "bbox": [
-            45,
-            27,
-            146,
+            12,
+            42,
+            180,
             198
           ],
           "edge_pixels": 0,
@@ -63,10 +63,10 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17274,
+          "nontransparent_pixels": 15978,
           "bbox": [
             12,
-            38,
+            47,
             180,
             198
           ],
@@ -78,11 +78,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 11912,
+          "nontransparent_pixels": 16889,
           "bbox": [
-            44,
-            35,
-            147,
+            12,
+            42,
+            180,
             198
           ],
           "edge_pixels": 0,
@@ -93,10 +93,10 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 18963,
+          "nontransparent_pixels": 18598,
           "bbox": [
             12,
-            34,
+            35,
             180,
             198
           ],
@@ -136,9 +136,9 @@
           "height": 208,
           "nontransparent_pixels": 13465,
           "bbox": [
-            28,
+            29,
             72,
-            180,
+            181,
             198
           ],
           "edge_pixels": 0,
@@ -164,11 +164,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13230,
+          "nontransparent_pixels": 12489,
           "bbox": [
+            50,
             27,
-            72,
-            178,
+            151,
             198
           ],
           "edge_pixels": 0,
@@ -196,9 +196,9 @@
           "height": 208,
           "nontransparent_pixels": 12203,
           "bbox": [
-            21,
+            20,
             72,
-            172,
+            171,
             198
           ],
           "edge_pixels": 0,
@@ -211,9 +211,9 @@
           "height": 208,
           "nontransparent_pixels": 12231,
           "bbox": [
-            22,
+            20,
             72,
-            174,
+            172,
             198
           ],
           "edge_pixels": 0,
@@ -267,9 +267,9 @@
           "height": 208,
           "nontransparent_pixels": 13465,
           "bbox": [
-            12,
+            11,
             72,
-            164,
+            163,
             198
           ],
           "edge_pixels": 0,
@@ -295,11 +295,11 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13230,
+          "nontransparent_pixels": 12489,
           "bbox": [
-            13,
-            72,
-            164,
+            40,
+            27,
+            141,
             198
           ],
           "edge_pixels": 0,
@@ -327,9 +327,9 @@
           "height": 208,
           "nontransparent_pixels": 12203,
           "bbox": [
-            19,
+            20,
             72,
-            170,
+            171,
             198
           ],
           "edge_pixels": 0,
@@ -342,9 +342,9 @@
           "height": 208,
           "nontransparent_pixels": 12231,
           "bbox": [
-            18,
+            20,
             72,
-            170,
+            172,
             198
           ],
           "edge_pixels": 0,
