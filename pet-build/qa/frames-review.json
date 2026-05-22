@@ -2,10 +2,7 @@
   "ok": true,
   "frames_root": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames",
   "errors": [],
-  "warnings": [
-    "jumping frame 00 has 300 non-transparent pixels near the cell edge",
-    "jumping frame 04 has 300 non-transparent pixels near the cell edge"
-  ],
+  "warnings": [],
   "rows": [
     {
       "state": "idle",
@@ -21,12 +18,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14188,
+          "nontransparent_pixels": 16787,
           "bbox": [
-            10,
-            44,
-            182,
-            200
+            12,
+            47,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -36,12 +33,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15005,
+          "nontransparent_pixels": 17720,
           "bbox": [
-            10,
-            44,
-            182,
-            200
+            12,
+            46,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -51,12 +48,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15688,
+          "nontransparent_pixels": 18735,
           "bbox": [
-            10,
-            46,
-            182,
-            200
+            12,
+            48,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -66,12 +63,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16683,
+          "nontransparent_pixels": 19993,
           "bbox": [
-            10,
-            44,
-            182,
-            200
+            12,
+            45,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -81,12 +78,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 15683,
+          "nontransparent_pixels": 19883,
           "bbox": [
-            10,
-            44,
-            182,
-            200
+            12,
+            45,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -96,12 +93,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\idle\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16011,
+          "nontransparent_pixels": 19246,
           "bbox": [
-            10,
-            49,
-            182,
-            200
+            12,
+            50,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -122,12 +119,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14690,
+          "nontransparent_pixels": 13555,
           "bbox": [
-            22,
-            70,
-            180,
-            200
+            25,
+            72,
+            177,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -137,12 +134,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14565,
+          "nontransparent_pixels": 13465,
           "bbox": [
-            26,
-            70,
-            182,
-            200
+            28,
+            72,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -152,12 +149,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14325,
+          "nontransparent_pixels": 13339,
           "bbox": [
-            27,
-            70,
-            183,
-            200
+            29,
+            72,
+            181,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -167,12 +164,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13573,
+          "nontransparent_pixels": 13230,
           "bbox": [
-            26,
-            70,
-            180,
-            200
+            27,
+            72,
+            178,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -182,12 +179,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13409,
+          "nontransparent_pixels": 12511,
           "bbox": [
-            21,
-            70,
-            176,
-            200
+            23,
+            72,
+            174,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -197,12 +194,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13240,
+          "nontransparent_pixels": 12203,
           "bbox": [
-            19,
-            70,
-            174,
-            200
+            21,
+            72,
+            172,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -212,12 +209,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13275,
+          "nontransparent_pixels": 12231,
           "bbox": [
-            20,
-            70,
-            176,
-            200
+            22,
+            72,
+            174,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -227,12 +224,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-right\\07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14461,
+          "nontransparent_pixels": 13400,
           "bbox": [
-            23,
-            70,
-            179,
-            200
+            25,
+            72,
+            177,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -253,12 +250,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14690,
+          "nontransparent_pixels": 13555,
           "bbox": [
-            12,
-            70,
-            170,
-            200
+            15,
+            72,
+            167,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -268,12 +265,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14565,
+          "nontransparent_pixels": 13465,
           "bbox": [
-            10,
-            70,
-            166,
-            200
+            12,
+            72,
+            164,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -283,12 +280,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14325,
+          "nontransparent_pixels": 13339,
           "bbox": [
-            9,
-            70,
-            165,
-            200
+            11,
+            72,
+            163,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -298,12 +295,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13573,
+          "nontransparent_pixels": 13230,
           "bbox": [
-            11,
-            70,
-            165,
-            200
+            13,
+            72,
+            164,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -313,12 +310,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13409,
+          "nontransparent_pixels": 12511,
           "bbox": [
-            15,
-            70,
-            170,
-            200
+            17,
+            72,
+            168,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -328,12 +325,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13240,
+          "nontransparent_pixels": 12203,
           "bbox": [
-            17,
-            70,
-            172,
-            200
+            19,
+            72,
+            170,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -343,12 +340,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13275,
+          "nontransparent_pixels": 12231,
           "bbox": [
-            16,
-            70,
-            172,
-            200
+            18,
+            72,
+            170,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -358,12 +355,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running-left\\07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14461,
+          "nontransparent_pixels": 13400,
           "bbox": [
-            13,
-            70,
-            169,
-            200
+            15,
+            72,
+            167,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -384,12 +381,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waving\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17408,
+          "nontransparent_pixels": 16606,
           "bbox": [
-            8,
-            55,
-            184,
-            200
+            10,
+            57,
+            182,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -399,12 +396,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waving\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17397,
+          "nontransparent_pixels": 16614,
           "bbox": [
-            8,
-            55,
-            184,
-            200
+            10,
+            57,
+            182,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -414,12 +411,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waving\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17382,
+          "nontransparent_pixels": 16605,
           "bbox": [
-            8,
-            55,
-            184,
-            200
+            10,
+            57,
+            182,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -429,12 +426,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waving\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17401,
+          "nontransparent_pixels": 16615,
           "bbox": [
-            8,
-            55,
-            184,
-            200
+            10,
+            57,
+            182,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -448,24 +445,21 @@
       "extraction_method": null,
       "ok": true,
       "errors": [],
-      "warnings": [
-        "jumping frame 00 has 300 non-transparent pixels near the cell edge",
-        "jumping frame 04 has 300 non-transparent pixels near the cell edge"
-      ],
+      "warnings": [],
       "frames": [
         {
           "index": 0,
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\jumping\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13137,
+          "nontransparent_pixels": 12381,
           "bbox": [
-            20,
-            83,
-            172,
-            208
+            22,
+            85,
+            170,
+            206
           ],
-          "edge_pixels": 300,
+          "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
         },
         {
@@ -473,12 +467,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\jumping\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13145,
+          "nontransparent_pixels": 12379,
           "bbox": [
-            20,
-            69,
-            172,
-            194
+            22,
+            71,
+            170,
+            192
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -488,12 +482,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\jumping\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13179,
+          "nontransparent_pixels": 12371,
           "bbox": [
-            20,
-            53,
-            172,
-            178
+            22,
+            55,
+            170,
+            176
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -503,12 +497,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\jumping\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13154,
+          "nontransparent_pixels": 12352,
           "bbox": [
-            20,
-            67,
-            172,
-            192
+            22,
+            69,
+            170,
+            190
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -518,14 +512,14 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\jumping\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13157,
+          "nontransparent_pixels": 12327,
           "bbox": [
-            20,
-            83,
-            172,
-            208
+            22,
+            85,
+            170,
+            206
           ],
-          "edge_pixels": 300,
+          "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
         }
       ]
@@ -544,12 +538,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16112,
+          "nontransparent_pixels": 15262,
           "bbox": [
-            10,
-            55,
-            182,
-            200
+            12,
+            57,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -559,12 +553,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16321,
+          "nontransparent_pixels": 15173,
           "bbox": [
-            10,
-            53,
-            182,
-            200
+            12,
+            55,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -574,12 +568,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16405,
+          "nontransparent_pixels": 15291,
           "bbox": [
-            10,
-            52,
-            182,
-            200
+            12,
+            54,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -589,12 +583,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16718,
+          "nontransparent_pixels": 15504,
           "bbox": [
-            10,
-            51,
-            182,
-            200
+            12,
+            54,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -604,12 +598,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16994,
+          "nontransparent_pixels": 15713,
           "bbox": [
-            10,
-            50,
-            182,
-            200
+            12,
+            53,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -619,12 +613,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17307,
+          "nontransparent_pixels": 16043,
           "bbox": [
-            10,
-            49,
-            182,
-            200
+            12,
+            52,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -634,12 +628,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\06.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 17409,
+          "nontransparent_pixels": 16291,
           "bbox": [
-            10,
-            49,
-            182,
-            200
+            12,
+            52,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -649,12 +643,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\failed\\07.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16604,
+          "nontransparent_pixels": 15760,
           "bbox": [
-            10,
-            59,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -675,12 +669,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16794,
+          "nontransparent_pixels": 16010,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -690,12 +684,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16821,
+          "nontransparent_pixels": 16010,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -705,12 +699,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16847,
+          "nontransparent_pixels": 15996,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -720,12 +714,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16826,
+          "nontransparent_pixels": 15972,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -735,12 +729,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16817,
+          "nontransparent_pixels": 15934,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -750,12 +744,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\waiting\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 16796,
+          "nontransparent_pixels": 15913,
           "bbox": [
-            10,
-            58,
-            182,
-            200
+            12,
+            60,
+            180,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -776,12 +770,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13573,
+          "nontransparent_pixels": 13230,
           "bbox": [
-            19,
-            70,
-            173,
-            200
+            20,
+            72,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -791,12 +785,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13409,
+          "nontransparent_pixels": 12511,
           "bbox": [
-            18,
-            70,
-            173,
-            200
+            20,
+            72,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -806,12 +800,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13240,
+          "nontransparent_pixels": 12203,
           "bbox": [
-            18,
-            70,
-            173,
-            200
+            20,
+            72,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -821,12 +815,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13275,
+          "nontransparent_pixels": 12231,
           "bbox": [
-            18,
-            70,
-            174,
-            200
+            20,
+            72,
+            172,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -836,12 +830,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14461,
+          "nontransparent_pixels": 13400,
           "bbox": [
-            18,
-            70,
-            174,
-            200
+            20,
+            72,
+            172,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -851,12 +845,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\running\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14572,
+          "nontransparent_pixels": 13472,
           "bbox": [
-            18,
-            70,
-            174,
-            200
+            20,
+            72,
+            172,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -877,12 +871,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\00.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13246,
+          "nontransparent_pixels": 12203,
           "bbox": [
-            19,
-            70,
-            173,
-            200
+            21,
+            73,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -892,12 +886,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\01.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13240,
+          "nontransparent_pixels": 12209,
           "bbox": [
-            19,
-            70,
-            173,
-            200
+            21,
+            73,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -907,12 +901,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\02.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13801,
+          "nontransparent_pixels": 13066,
           "bbox": [
-            19,
-            70,
-            173,
-            200
+            21,
+            72,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -922,12 +916,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\03.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 14162,
+          "nontransparent_pixels": 13170,
           "bbox": [
-            18,
-            73,
-            173,
-            200
+            21,
+            75,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -937,12 +931,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\04.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 13355,
+          "nontransparent_pixels": 12384,
           "bbox": [
-            18,
-            71,
-            173,
-            200
+            20,
+            73,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0
@@ -952,12 +946,12 @@
           "file": "D:\\\u684c\u9762\\otto-pet\\pet-build\\frames\\review\\05.png",
           "width": 192,
           "height": 208,
-          "nontransparent_pixels": 12725,
+          "nontransparent_pixels": 11870,
           "bbox": [
-            19,
-            83,
-            173,
-            200
+            21,
+            85,
+            171,
+            198
           ],
           "edge_pixels": 0,
           "chroma_adjacent_pixels": 0

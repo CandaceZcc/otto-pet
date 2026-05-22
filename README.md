@@ -44,7 +44,7 @@ Copy-Item .\pet\diangun-otto\spritesheet.webp $dest -Force
 依赖：
 
 ```powershell
-python -m pip install pillow
+python -m pip install pillow rembg onnxruntime
 ```
 
 生成 pet、QA 预览和可发布包：

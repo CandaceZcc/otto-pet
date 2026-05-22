@@ -11,6 +11,12 @@ from pathlib import Path
 
 from PIL import Image, ImageChops, ImageFilter, ImageSequence, ImageStat
 
+try:
+    from rembg import new_session, remove
+except ImportError:  # pragma: no cover - optional dependency
+    new_session = None
+    remove = None
+
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / "pet-build"
@@ -90,6 +96,16 @@ def reset_output() -> None:
 def load_gif_frames(path: Path) -> list[Image.Image]:
     with Image.open(path) as opened:
         return [frame.convert("RGBA") for frame in ImageSequence.Iterator(opened)]
+
+
+def ai_segment_frame(frame: Image.Image, session: object | None) -> Image.Image | None:
+    if remove is None or session is None:
+        return None
+    try:
+        segmented = remove(frame.convert("RGBA"), session=session, post_process_mask=True)
+    except Exception:
+        return None
+    return clear_transparent_rgb(segmented.convert("RGBA"))
 
 
 def sample_background(frame: Image.Image, kind: str) -> tuple[int, int, int]:
@@ -180,7 +196,7 @@ def solidify_subject_alpha(image: Image.Image) -> Image.Image:
     return clear_transparent_rgb(rgba)
 
 
-def keep_largest_alpha_component(image: Image.Image) -> Image.Image:
+def keep_largest_alpha_component(image: Image.Image, *, solidify: bool = True) -> Image.Image:
     rgba = image.convert("RGBA")
     alpha = rgba.getchannel("A")
     mask = alpha.point(lambda v: 255 if v > 18 else 0)
@@ -230,7 +246,9 @@ def keep_largest_alpha_component(image: Image.Image) -> Image.Image:
         if index not in keep_indexes:
             alpha_data[index] = 0
     rgba.putalpha(Image.frombytes("L", (w, h), bytes(alpha_data)))
-    return solidify_subject_alpha(rgba)
+    if solidify:
+        return solidify_subject_alpha(rgba)
+    return clear_transparent_rgb(rgba)
 
 
 def subject_bbox(frames: list[Image.Image], threshold: int = 18) -> tuple[int, int, int, int]:
@@ -277,7 +295,7 @@ def fit_to_cell(
     left = (CELL_W - crop.width) // 2 + x_shift
     top = CELL_H - crop.height - 10 + y_shift
     canvas.alpha_composite(crop, (left, top))
-    return keep_largest_alpha_component(clear_transparent_rgb(canvas))
+    return keep_largest_alpha_component(clear_transparent_rgb(canvas), solidify=False)
 
 
 def brightness(frame: Image.Image) -> float:
@@ -449,9 +467,13 @@ def main() -> None:
     reset_output()
 
     raw = {key: load_gif_frames(ROOT / clip.filename) for key, clip in SOURCES.items()}
+    segmentation_session = new_session("u2net_human_seg") if new_session is not None else None
     cleaned: dict[str, list[Image.Image]] = {}
     for key, clip in SOURCES.items():
-        cleaned[key] = [matte_from_background(frame, clip.background) for frame in raw[key]]
+        cleaned[key] = [
+            ai_segment_frame(frame, segmentation_session) or matte_from_background(frame, clip.background)
+            for frame in raw[key]
+        ]
 
     viewports = {
         key: subject_bbox(frames)
