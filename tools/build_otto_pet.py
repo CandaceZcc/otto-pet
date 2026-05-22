@@ -62,7 +62,7 @@ SOURCES = {
 
 
 STATE_SOURCES = {
-    "idle": ("suona", [10, 11, 12, 13, 14, 15], "smooth continuous suona idle loop"),
+    "idle": ("suona", [4, 5, 6, 7, 6, 5], "visible looping suona idle performance"),
     "running-right": (
         "jiyan_running",
         [26, 27, 28, 29, 30, 31, 32, 33],

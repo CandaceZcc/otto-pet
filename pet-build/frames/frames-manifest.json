@@ -9,44 +9,44 @@
       {
         "file": "frames\\idle\\00.png",
         "source": "suona",
-        "source_frame": 10,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 50.61
+        "source_frame": 4,
+        "note": "visible looping suona idle performance",
+        "brightness": 73.87
       },
       {
         "file": "frames\\idle\\01.png",
         "source": "suona",
-        "source_frame": 11,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 51.65
+        "source_frame": 5,
+        "note": "visible looping suona idle performance",
+        "brightness": 71.45
       },
       {
         "file": "frames\\idle\\02.png",
         "source": "suona",
-        "source_frame": 12,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 51.5
+        "source_frame": 6,
+        "note": "visible looping suona idle performance",
+        "brightness": 74.15
       },
       {
         "file": "frames\\idle\\03.png",
         "source": "suona",
-        "source_frame": 13,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 51.96
+        "source_frame": 7,
+        "note": "visible looping suona idle performance",
+        "brightness": 74.62
       },
       {
         "file": "frames\\idle\\04.png",
         "source": "suona",
-        "source_frame": 14,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 48.59
+        "source_frame": 6,
+        "note": "visible looping suona idle performance",
+        "brightness": 74.15
       },
       {
         "file": "frames\\idle\\05.png",
         "source": "suona",
-        "source_frame": 15,
-        "note": "smooth continuous suona idle loop",
-        "brightness": 51.72
+        "source_frame": 5,
+        "note": "visible looping suona idle performance",
+        "brightness": 71.45
       }
     ],
     "running-right": [
