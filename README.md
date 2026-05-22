@@ -2,6 +2,16 @@
 
 基于当前目录里的 Otto GIF 素材制作的 Codex 自定义 pet。成品保留真人直播切片的 meme 感，按 Codex pet contract 打包为 `pet.json` + `spritesheet.webp`。
 
+## 一键安装
+
+```bash
+npx codex-pets add diangun-otto
+```
+
+Pet 页面：
+
+https://codex-pets.net/#/pets/diangun-otto
+
 ## 预览
 
 构建后可查看 QA 图：
@@ -61,16 +71,13 @@ python "$env:USERPROFILE\.codex\skills\hatch-pet\scripts\validate_atlas.py" .\pe
 python "$env:USERPROFILE\.codex\skills\hatch-pet\scripts\inspect_frames.py" --frames-root .\pet-build\frames --json-out .\pet-build\qa\frames-review.json
 ```
 
-## codex-pets.net 上传
-
-1. 打开 https://codex-pets.net/#/upload
-2. 上传 `pet/diangun-otto/pet.json` 和 `pet/diangun-otto/spritesheet.webp`
-3. 上传完成后，把网站生成的链接或命令发回来。
-4. TODO: 在这里补充上传后生成的一键安装命令。
-
 ## 文件说明
 
 - `tools/build_otto_pet.py`：从原始 GIF 清洗、补色、抽帧并生成 Codex pet。
 - `pet/diangun-otto/`：可直接安装或上传的最终 pet package。
 - `pet-build/`：构建产物和 QA 文件，可重新生成。
 - `*.gif`：原始素材。
+
+## License
+
+代码部分使用 MIT License。GIF、spritesheet、预览图和其他视觉素材使用 CC BY-NC-SA 4.0；原始素材中涉及的人物、片段和相关权利仍归原权利人所有。
